@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="V1.css" />
+  </head>
+  <body>
+    <section class="logo"></section>
+      <nav class="logo1">
+        <img src="images/RRlogo.jpg" alt="RR Architecture & Interiors" />
+        <label>RR INTERIORS</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/main.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+      <h1>RR INTERIORS</h1>
+      <p>
+        RR Interior designs is the art and science of understanding people's
+        behavior to create functional spaces, that are aesthetically pleasing,
+        within a building. Decoration is the furnishing or adorning of a space
+        with decorative elements, sometimes complemented by advice and practical
+        assistance.
+      </p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+      <a href="index.html"
+        ><h3
+          style="
+            color: antiquewhite;
+            text-decoration: underline;
+            text-decoration-color: rgb(238, 35, 35);
+          "
+        >
+          GO TO HOME
+        </h3></a
+      >
+    </div>
+
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>

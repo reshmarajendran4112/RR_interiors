@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 5rem;
+}
+.logo .logo1 img {
+  background-size: contain;
+  width: 70px;
+  height: 82px;
+  float: left;
+  border-radius: 100%;
+}
+nav {
+  background: rgba(17, 16, 16, 0.89);
+  width: 100vw;
+  height: 82px;
+}
+.logo .logo1 label a {
+  color: white;
+  font-size: 1.5em;
+  line-height: 80px;
+  padding: 0 0 0 0.5em;
+  font-weight: bolder;
+  font-style: sans-serif;
+  display: inline-block;
+  position: absolute;
+  text-shadow: 1px 1px 1px rgb(8, 8, 8);
+}
+.logo .logo1 label a:hover {
+  color: #ffd700;
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 19px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 3px 2px 1px rgb(2 14 12);
+}
+
+a:hover {
+  color: #ffd700;
+  /* background: #ffd900e9; */
+  /* background: hsl(0, 0%, 4%); */
+  transition: 1s;
+  /* text-decoration: underline; */
+  /* text-decoration-color: rgb(30, 29, 29); */
+  /* text-decoration-color: rgb(36, 35, 35); */
+  text-decoration-thickness: 3px;
+}
+body {
+  margin: 0;
+  font-family: "Aptos Display";
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  background-image: url(images/S1.jpg);
+  /* filter: blur(1px); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 2em;
+  align-items: center;
+}
+.hero-left {
+  flex: 40%;
+}
+.hero .hero-left h1 {
+  color: rgba(255, 217, 0, 0.63);
+  text-transform: capitalize;
+  text-shadow: 3px 1px 0px #242222;
+  padding: 0 0 0 6em;
+  text-align: center;
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: bolder;
+  z-index: 2;
+  position: absolute;
+  margin-right: 0.5em;
+}
+.hero .hero-left h2 {
+  position: relative;
+  text-align: center;
+  padding: 3em;
+  color: rgba(255, 217, 0, 0.63);
+  text-shadow: 1px 1px 1px #242222;
+  font-weight: bolder;
+}
+.hero .hero-left button {
+  color: hwb(0 3% 97% / 0.933);
+  position: relative;
+  background-color: rgba(166, 126, 6, 0.259);
+  font-weight: bolder;
+  font-size: 22px;
+  width: 7em;
+  border: 3px solid rgb(35, 35, 35);
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 0.5em;
+}

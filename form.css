@@ -1,0 +1,72 @@
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-image: url(images/fimage.png);
+  /* filter: blur(1px); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 1em;
+}
+form {
+  background-color: rgba(242, 212, 151, 0.29);
+  border: 2px solid black;
+}
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: bold;
+}
+input[type="date"] {
+  padding: 21px 66px;
+}
+input[type="submit"] {
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: darkslategrey;
+  border-radius: 59%;
+  margin-bottom: 1px;
+  position: relative;
+}
+.f1 label {
+  font-size: large;
+  font-weight: bold;
+}
+textarea {
+  padding: 51px;
+}
+.tables {
+  flex: 20%;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  height: 405px;
+  flex-direction: column;
+  flex: none;
+  display: none;
+}
+table,
+th,
+td {
+  border: 3px solid #000;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+
+  text-align: center;
+  padding: 20px;
+  text-decoration: solid;
+  text-transform: capitalize;
+  text-shadow: #000;
+}

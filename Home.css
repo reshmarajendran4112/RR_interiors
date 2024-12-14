@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 5rem;
+}
+.logo .logo1 img {
+  width: 70px;
+  height: 82px;
+  float: left;
+  border-radius: 100%;
+}
+nav {
+  background: rgba(97, 97, 97, 0.89);
+  width: 100vw;
+  height: 82px;
+}
+.logo .logo1 label {
+  color: black;
+  font-size: 1.5em;
+  line-height: 80px;
+  padding: 0 0 0 0.5em;
+  font-weight: bolder;
+  font-style: sans-serif;
+  display: inline-block;
+  position: absolute;
+  text-shadow: 1px 1px 1px floralwhite;
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px floralwhite;
+}
+
+a:hover {
+  background: rgb(225, 213, 197);
+  transition: 0.5s;
+  text-decoration: underline;
+  text-decoration-color: gray;
+  text-decoration-thickness: 4px;
+}
+body {
+  margin: 0;
+  font-family: "Aptos Display";
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  background-image: url(images/S1.jpg);
+  /* filter: blur(1px); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 2em;
+  align-items: center;
+}
+.hero-left {
+  flex: 40%;
+}

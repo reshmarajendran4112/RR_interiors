@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RR Interiors</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="logo">
+      <div class="logo1">
+        <nav>
+          <img src="images/RRcrown.jpg" alt="RR Architecture & Interiors" />
+          <label><a href="index.html">RR INTERIORS</a></label>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="form.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="form">
+      <div id="Formdisplay" class="f1">
+        <h1 style="font-size: 2em; color: black; text-shadow: 1px 1px white">
+          REACH OUT US HERE
+        </h1>
+        <br />
+
+        <form action="form.html" method="get">
+          <label>First Name</label><br />
+          <input type="text" name="fname" placeholder="Fname" /><br />
+          <label>Last Name</label><br />
+          <input type="text" name="lname" placeholder="Lname" /><br />
+          <label>E-mail</label><br />
+          <input type="text" name="mail" placeholder="Email" /><br />
+          <label>Contact</label><br />
+          <input type="number" name="num" placeholder="Contact Number" /><br />
+          <label>Apply Date</label><br />
+          <input type="Date" name="Date" placeholder="Date" /><br />
+          <label>Send Message</label><br />
+          <textarea class="textarea" name="Date"></textarea><br />
+          <input type="submit" />
+        </form>
+      </div>
+      <div id="DisplayValues" class="tables">
+        <table>
+          <tbody>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>EMAIL</th>
+              <th>Mobile No.</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td id="fname"></td>
+              <td id="lname"></td>
+              <td id="mail"></td>
+              <td id="num"></td>
+              <td id="Date"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br /><br />
+        <h1 style="font-size: 3em; color: black; text-shadow: 3px 2px white">
+          Thank you My Well Wisher
+        </h1>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  var fname = new URL(location.href).searchParams.get("fname");
+  var lname = new URL(location.href).searchParams.get("lname");
+  var mail = new URL(location.href).searchParams.get("mail");
+  var num = new URL(location.href).searchParams.get("num");
+  var FDate = new URL(location.href).searchParams.get("Date");
+  if (typeof fname == "string" && typeof num == "string") {
+    var x = document.getElementById("Formdisplay");
+    x.style.display = "none";
+    var y = document.getElementById("DisplayValues");
+    y.style.display = "block";
+
+    document.getElementById("fname").innerHTML = fname;
+    document.getElementById("lname").innerHTML = lname;
+    document.getElementById("mail").innerHTML = mail;
+    document.getElementById("num").innerHTML = num;
+    document.getElementById("Date").innerHTML = FDate;
+  }
+</script>

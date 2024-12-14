@@ -1,0 +1,90 @@
+.S1 {
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  background-image: url(images/AHeroimage.jpg);
+  /* filter: blur(1px); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 2.5em;
+}
+.hero-left {
+  flex: 40%;
+}
+
+.S1 .Service {
+  /* background-image: url("images/heroimage2.jpg"); */
+  position: relative;
+  flex: 40%;
+  height: auto;
+  /* background-color: #f08229; */
+  z-index: 0; /*  strip is behind the hero content */
+}
+
+.S1 .RRinterior {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1em;
+  height: 40em;
+}
+.RRservice {
+  border: 3px solid #f4eeee;
+  padding: 6px;
+  width: 21%;
+  height: 100%;
+  text-align: center;
+  border-radius: 10%;
+  margin: 10px;
+  overflow: hidden;
+  background-color: rgb(59, 59, 59);
+  cursor: pointer;
+}
+.RRservice img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10%;
+  padding: 15px;
+}
+.RRinterior .RRservice h2 a {
+  color: white;
+  text-align: center;
+  text-decoration-color: #e8e5e5;
+  text-transform: uppercase;
+  height: 2em;
+  z-index: 1;
+  overflow: hidden;
+  padding: 10px;
+}
+.RRinterior .RRservice h2 a:hover {
+  color: #ffd700;
+}
+.RRservice p {
+  color: antiquewhite;
+  height: 79px;
+  position: relative;
+  /* overflow: visible; */
+  text-align: justify;
+}
+.RRservice button {
+  /* background-image: linear-gradient(silver, white); */
+  color: black;
+  position: relative;
+  background-color: rgba(192, 192, 192, 0.93);
+  font-size: 20px;
+  width: 7em;
+  border: 3px solid rgb(9, 9, 9);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 2em;
+}
